@@ -5,7 +5,7 @@
 # Nugget (mobile)
 # 金块（移动版）
 
-汉化版本Nugget-Mobile下载地址：<a href="https://nightly.link/136478738/Nugget-Mobile/workflows/Build/main/artifact.zip"><img src="https://nightly.link/logo.svg" alt style="width: 20px;" /></a> [nightly.link]
+汉化版本Nugget-Mobile下载地址：<a href="https://nightly.link/136478738/Nugget-Mobile/workflows/Build/main/artifact.zip"><img src="https://nightly.link/logo.svg" alt style="width: 20px;" /></a> [nightly.link](https://nightly.link/136478738/Nugget-Mobile/workflows/Build/main/artifact.zip)
 <brUnlock your device's full potential! Should work on all versions iOS 16.0 - 18.2 developer beta 2 (public beta 1).
 <br>释放您设备的全部潜力！应适用于所有版本的iOS 16.0-18.2开发者测试版2（公测版1）。
 <br>This will not work on iOS 18.2 beta 2 or newer. Please do not make issues about this, it will not be fixed. You will have to use the [pc version of Nugget](https://github.com/leminlimez/Nugget) unless a fix comes in the future.
