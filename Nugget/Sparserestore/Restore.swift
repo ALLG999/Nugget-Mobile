@@ -161,7 +161,7 @@ class RestoreManager {
             print("Executing args: \(restoreArgs)")
             var argv = restoreArgs.map{ strdup($0) }
             let result = idevicebackup2_main(Int32(restoreArgs.count), &argv)
-            print("关闭查找idevicebackup2 exited with code \(result)")
+            print("idevicebackup2 exited with code \(result)")
         } catch {
             print(error.localizedDescription)
             return
