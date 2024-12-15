@@ -11,10 +11,10 @@ import UIKit
 var currentUIAlertController: UIAlertController?
 
 
-fileprivate let errorString = NSLocalizedString("Error", comment: "")
-fileprivate let okString = NSLocalizedString("OK", comment: "")
-fileprivate let helpString = NSLocalizedString("Help", comment: "")
-fileprivate let cancelString = NSLocalizedString("Cancel", comment: "")
+fileprivate let errorString = NSLocalizedString("错误", comment: "")
+fileprivate let okString = NSLocalizedString("完成", comment: "")
+fileprivate let helpString = NSLocalizedString("求助", comment: "")
+fileprivate let cancelString = NSLocalizedString("取消", comment: "")
 
 extension UIApplication {
     
