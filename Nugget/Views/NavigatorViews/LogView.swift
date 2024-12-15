@@ -51,9 +51,9 @@ struct LogView: View {
                             }
                             if succeeded {
                                 // respring device
-                                UIApplication.shared.alert(title: "Success!", body: "Please respring your device to apply changes.")
+                                UIApplication.shared.alert(title: "成功！", body: "请重新启动您的设备以应用更改。")
                             } else {
-                                UIApplication.shared.alert(body: "Please read logs for full error info")
+                                UIApplication.shared.alert(body: "请阅读日志以获取完整的错误信息")
                             }
                             return
                         }
@@ -77,13 +77,13 @@ struct LogView: View {
                                 print("Rebooting device...")
                                 MobileDevice.rebootDevice(udid: udid)
                             } else {
-                                UIApplication.shared.alert(title: "Success!", body: "Please restart your device to see changes.")
+                                UIApplication.shared.alert(title: "成功！", body: "请重新启动您的设备才能查看更改。")
                             }
                         /* Error Dialogs Below */
                         } else if log.contains("Find My") {
-                            UIApplication.shared.alert(body: "Find My must be disabled in order to use this tool.\n\nDisable Find My from Settings (Settings -> [Your Name] -> Find My) and then try again.")
-                        } else if log.contains("Could not receive from mobilebackup2") {
-                            UIApplication.shared.alert(body: "Failed to receive requests from mobilebackup2. Please restart the app and try again.")
+                            UIApplication.shared.alert(body: "必须禁用“查找”才能使用此工具。\n\n从“设置”中禁用“查找”（设置 -> [您的姓名] ->“查找”），然后重试。")
+                        } else if log.contains("无法从 mobilebackup2 接收") {
+                            UIApplication.shared.alert(body: "无法接收来自 mobilebackup2 的请求。请重新启动应用程序并重试。")
                         }
                     }
                 }
