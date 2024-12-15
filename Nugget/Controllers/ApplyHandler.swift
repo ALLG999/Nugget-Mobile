@@ -8,13 +8,13 @@
 import Foundation
 
 enum TweakPage: String, CaseIterable {
-    case MobileGestalt = "Mobilegestalt"
-    case FeatureFlags = "Feature Flags"
-    case Eligibility = "Eligibility"
-    case StatusBar = "Status Bar"
-    case SpringBoard = "SpringBoard"
-    case Internal = "Internal Options"
-    case SkipSetup = "Skip Setup"
+    case MobileGestalt = "移动格式塔"
+    case FeatureFlags = "功能标记"
+    case Eligibility = "合格"
+    case StatusBar = "状态栏"
+    case SpringBoard = "跳板"
+    case Internal = "内部选项"
+    case SkipSetup = "跳过设置"
 }
 
 class ApplyHandler: ObservableObject {
@@ -166,7 +166,7 @@ class ApplyHandler: ObservableObject {
                         return false
                     }
                 } else {
-                    print("Failed to convert build number to String")
+                    print("无法将版本号转换为字符串")
                 }
             } else {
                 print("sysctlbyname failed with error: \(String(cString: strerror(errno)))")
@@ -195,7 +195,7 @@ class ApplyHandler: ObservableObject {
                         return false
                     }
                 } else {
-                    print("Failed to convert build number to String")
+                    print("无法将版本号转换为字符串")
                 }
             } else {
                 print("sysctlbyname failed with error: \(String(cString: strerror(errno)))")
@@ -247,7 +247,7 @@ class ApplyHandler: ObservableObject {
                 }
                 return true
             } else {
-                print("No files to restore!")
+                print("没有可恢复的文件！")
                 return false
             }
         } catch {
@@ -280,7 +280,7 @@ class ApplyHandler: ObservableObject {
                 }
                 return true
             } else {
-                print("No files to restore!")
+                print("没有可恢复的文件！")
                 return false
             }
         } catch {
