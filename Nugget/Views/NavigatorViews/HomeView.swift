@@ -18,9 +18,9 @@ struct HomeView: View {
     @State var path = NavigationPath()
     
     // Prefs
-    @AppStorage("自动重启") var autoReboot: Bool = true
-    @AppStorage("配对文件") var pairingFile: String?
-    @AppStorage("跳过设置") var skipSetup: Bool = true
+    @AppStorage("AutoReboot") var autoReboot: Bool = true
+    @AppStorage("PairingFile") var pairingFile: String?
+    @AppStorage("SkipSetup") var skipSetup: Bool = true
     
     var body: some View {
         NavigationStack(path: $path) {
@@ -103,7 +103,7 @@ struct HomeView: View {
                                 .minimumScaleFactor(0.5)
                             Spacer()
                             Button {
-                                UIApplication.shared.alert(title: NSLocalizedString("Info", comment: "info header"), body: NSLocalizedString("应用Cowabunga Lite的Skip Setup方法跳过非漏洞利用文件的设置。\n\n这可能会给某些人带来问题，因此如果您使用配置文件，请将其关闭。\n\n如果您只应用漏洞利用文件，则不会应用此方法，因为它将使用SparseRestore方法跳过安装。", comment: "跳过设置信息"))
+                                UIApplication.shared.alert(title: NSLocalizedString("通知", comment: "info header"), body: NSLocalizedString("应用Cowabunga Lite的Skip Setup方法跳过非漏洞利用文件的设置。\n\n这可能会给某些人带来问题，因此如果您使用配置文件，请将其关闭。\n\n如果您只应用漏洞利用文件，则不会应用此方法，因为它将使用SparseRestore方法跳过安装。", comment: "跳过设置信息"))
                             } label: {
                                 Image(systemName: "info.circle")
                             }
