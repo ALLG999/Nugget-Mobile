@@ -39,16 +39,16 @@ struct RevertTweaksPopoverView: View {
                         }
                     }
                 }
-                .navigationTitle("选择调整")
+                .navigationTitle("Select Tweaks")
                 Section {
                     // Apply button
-                    Button("删除调整") {
+                    Button("Remove Tweaks") {
                         dismiss()
                         revertFunction(true)
                     }
                     .buttonStyle(TintedButton(color: .red, fullwidth: true))
                     // Cancel button
-                    Button("取消") {
+                    Button("Cancel") {
                         dismiss()
                     }
                     .buttonStyle(TintedButton(color: .blue, fullwidth: true))
