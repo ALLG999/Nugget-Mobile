@@ -81,7 +81,7 @@ struct StatusBarView: View {
         "4G", // 3
         "LTE", // 4
         "WiFi", // 5
-        "个人热点", // 6
+        "Personal Hotspot", // 6
         "1x", // 7
         "5Gᴇ", // 8
         "LTE-A", // 9
