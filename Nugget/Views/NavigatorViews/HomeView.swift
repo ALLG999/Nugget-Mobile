@@ -29,7 +29,7 @@ struct HomeView: View {
                 Section {
                     
                 } header: {
-                    Label("Version \(Bundle.main.releaseVersionNumber ?? "UNKNOWN") (\(Int(buildNumber) != 0 ? "beta \(buildNumber)" : NSLocalizedString("发布", comment:"")))", systemImage: "信息")
+                    Label("版本号 \(Bundle.main.releaseVersionNumber ?? "UNKNOWN") (\(Int(buildNumber) != 0 ? "beta \(buildNumber)" : NSLocalizedString("发布", comment:"")))", systemImage: "信息")
                 }
                 .listStyle(InsetGroupedListStyle())
                 
@@ -149,7 +149,7 @@ struct HomeView: View {
                     LinkCell(imageName: "cable.connector", url: "https://libimobiledevice.org", title: "libimobiledevice", contribution: "Restore Library", systemImage: true, circle: true)
                     LinkCell(imageName: "ALLG", url: "https://github.com/136478738/", title: "ALLG", contribution: "中文汉化", systemImage: false, circle: true)
                 } header: {
-                    Label("Credits", systemImage: "wrench.and.screwdriver")
+                    Label("致谢", systemImage: "wrench.and.screwdriver")
                 }
             }
             .onOpenURL(perform: { url in
@@ -200,20 +200,21 @@ struct HomeView: View {
         if ApplyHandler.shared.trollstore || ready() {
             if !reverting && ApplyHandler.shared.allEnabledTweaks().isEmpty {
                 // if there are no enabled tweaks then tell the user
-                UIApplication.shared.alert(body: "You do not have any tweaks enabled! Go to the tools page to select some.")
+                UIApplication.shared.alert(body: "您没有启用任何调整！请转到工具页面选择一些。")
             } else if ApplyHandler.shared.isExploitOnly() {
                 path.append(reverting ? "RevertChanges" : "ApplyChanges")
             } else if !ApplyHandler.shared.trollstore {
                 // if applying non-exploit files, warn about setup
-                UIApplication.shared.confirmAlert(title: "Warning!", body: "You are applying non-exploit related files. This will make the setup screen appear. Click Cancel if you do not wish to proceed.\n\nWhen setting up, you MUST click \"Do not transfer apps & data\".\n\nIf you see a screen that says \"iPhone Partially Set Up\", DO NOT tap the big blue button. You must click \"Continue with Partial Setup\".", onOK: {
+                UIApplication.shared.confirmAlert(title: "警告！", body: "您正在应用与漏洞利用无关的文件。这将显示设置屏幕。如果不想继续，请单击“取消”。\n\n设置时，您必须单击\“不传输应用程序和数据”\。\n\n如果您看到屏幕上显示\“iPhone部分设置”\，请不要点击蓝色大按钮。您必须单击\“继续部分安装”\".", onOK: {
                     path.append(reverting ? "RevertChanges" : "ApplyChanges")
                 }, noCancel: false)
             }
         } else if pairingFile == nil {
-            lastError = "Please select your pairing file to continue."
+            lastError = "请选择您的配对文件以继续。"
             showErrorAlert.toggle()
         } else {
-            lastError = "minimuxer is not ready. Ensure you have WiFi and WireGuard VPN set up."
+            lastError = "minimuxer 尚未准备好。请确保您已设置 WiFi 和 WireGuard VPN。
+"
             showErrorAlert.toggle()
         }
     }
