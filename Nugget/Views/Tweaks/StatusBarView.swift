@@ -647,7 +647,7 @@ struct StatusBarView: View {
             }
         }
         .tweakToggle(for: .StatusBar)
-        .navigationTitle("Status Bar")
+        .navigationTitle("状态栏")
     }
 }
 
