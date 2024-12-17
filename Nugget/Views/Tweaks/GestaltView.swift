@@ -115,7 +115,7 @@ struct GestaltView: View {
                 
                 // device model name
                 VStack {
-                    Toggle("更改设备型号名称", isOn: $deviceModelChanged).onChange(of: deviceModelChanged, perform: { nv in
+                    Toggle("Change Device Model Name", isOn: $deviceModelChanged).onChange(of: deviceModelChanged, perform: { nv in
                         if nv {
                             if deviceModelName != "" {
                                 gestaltManager.setGestaltValue(key: "ArtworkDeviceProductDescription", value: deviceModelName)
@@ -124,7 +124,7 @@ struct GestaltView: View {
                             gestaltManager.removeGestaltValue(key: "ArtworkDeviceProductDescription")
                         }
                     })
-                    TextField("设备型号名称", text: $deviceModelName).onChange(of: deviceModelName, perform: { nv in
+                    TextField("Device Model Name", text: $deviceModelName).onChange(of: deviceModelName, perform: { nv in
                         if deviceModelChanged {
                             gestaltManager.setGestaltValue(key: "ArtworkDeviceProductDescription", value: deviceModelName)
                         }
