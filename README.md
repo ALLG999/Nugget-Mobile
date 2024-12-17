@@ -7,7 +7,7 @@
 [![Build](https://github.com/136478738/Nugget-Mobile/actions/workflows/build.yml/badge.svg?branch=main)](https://github.com/136478738/Nugget-Mobile/actions/workflows/build.yml)
 [![X](https://img.shields.io/twitter/follow/V_wo50)](https://x.com/V_wo50)
 <br>本项目基于AGPL-3.0许可证开源 请务必遵循相关规定[https://blog.csdn.net/weixin_43841461/article/details/142106462](https://blog.csdn.net/weixin_43841461/article/details/142106462)
-汉化版本Nugget-Mobile下载地址：<a href="https://nightly.link/136478738/Nugget-Mobile/workflows/build/main/artifact.zip"><img src="https://nightly.link/logo.svg" alt style="width: 20px;" /></a> [nightly.link](https://nightly.link/136478738/Nugget-Mobile/workflows/build/main/artifact.zip)
+<br>汉化版本Nugget-Mobile下载地址：<a href="https://nightly.link/136478738/Nugget-Mobile/workflows/build/main/artifact.zip"><img src="https://nightly.link/logo.svg" alt style="width: 20px;" /></a> [nightly.link](https://nightly.link/136478738/Nugget-Mobile/workflows/build/main/artifact.zip)
 <br>Unlock your device's full potential! Should work on all versions iOS 16.0 - 18.2 developer beta 2 (public beta 1).
 <br>释放您设备的全部潜力！应适用于所有版本的iOS 16.0-18.2开发者测试版2（公测版1）。
 <br>This will not work on iOS 18.2 beta 2 or newer. Please do not make issues about this, it will not be fixed. You will have to use the [pc version of Nugget](https://github.com/leminlimez/Nugget) unless a fix comes in the future.
@@ -15,7 +15,7 @@
 <br>A `.mobiledevicepairing` file and wireguard are required in order to use this. Read the [sections](#getting-your-mobiledevicepairing-file) below to see how to get those.
 <br>使用此功能需要一个`.mobiledevicepairing`文件和wireguard。阅读下面的[获取您的 mobiledevicepairing 文件](#获取您的-mobiledevicepairing-文件)，了解如何获取这些文件。
 <br>If you are having issues with minimuxer, see the [Solving Minimuxer Issues](#solving-minimuxer-issues) thread.
-<br>如果您在使用minimuxer时遇到问题，请参阅[解决 Minimuxer 问题](#解决-Minimuxer-问题)线程。
+<br>如果您在使用minimuxer时遇到问题，请参阅 [解决 Minimuxer 问题](#solving-minimuxer-issues) 线索。
 <br>This uses the sparserestore exploit to write to files outside of the intended restore location, like mobilegestalt.
 <br>这使用sparserestore漏洞来写入预期还原位置之外的文件，如mobilegestalt。
 <br>Note: I am not responsible if your device bootloops, use this software with caution. Please back up your data before using!
