@@ -35,6 +35,6 @@ struct SpringboardTweaksView: View {
             }
         }
         .tweakToggle(for: .SpringBoard)
-        .navigationTitle("Springboard Tweaks")
+        .navigationTitle("跳板调整")
     }
 }
