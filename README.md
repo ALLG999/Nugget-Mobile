@@ -55,8 +55,8 @@ If you have used Cowabunga Lite before, you may experience issues with minimuxer
 <br>如果您之前使用过 Cowabunga Lite，您可能会遇到 minimuxer 问题。这是因为它跳过了设置过程。
 <br>These steps should solve the problem, however it is not an end-all be-all solution.
 <br>这些步骤应该可以解决问题，但是并不是万能的解决方案。
-1. Download [Nugget Python](https://github.com/leminlimez/Nugget) and follow the steps in the readme to install python and the requirements
-   <br>下载 [Nugget Python](https://github.com/leminlimez/Nugget) 并按照自述文件中的步骤安装 python 和满足要求
+1. Download [Nugget Python](https://github.com/leminlimez/Nugget/releases) and follow the steps in the readme to install python and the requirements
+   <br>下载 [Nugget Python](https://github.com/leminlimez/Nugget/releases) 并按照自述文件中的步骤安装 python 和满足要求
 2. Connect your device and (in terminal) type `python3 fix-minimuxer.py` (or `python fix-minimuxer.py` if it doesn't work)
    <br>连接你的设备并（在终端中）输入`python3 fix-minimuxer.py`（如果不起作用，则输入`python fix-minimuxer.py`）
 
@@ -72,8 +72,8 @@ Your device should reboot. After it reboots, try Nugget mobile now. If it still 
 
 If the steps above don't work for you, try using `Cowabunga Lite` and clicking the `Deep Clean` button, then try the steps again.
 <br>如果上述步骤对您不起作用，请尝试使用`Cowabunga Lite`并单击`深度清洁`按钮，然后再次尝试这些步骤。
-If not even that works, the only solution I know is to wipe the device (not ideal). I would recommend using [Nugget Python](https://github.com/leminlimez/Nugget) instead in this case.
-<br>如果这还不起作用，我知道的唯一解决方案就是擦除设备（不太理想）。在这种情况下，我建议改用 [Nugget Python](https://github.com/leminlimez/Nugget)。
+If not even that works, the only solution I know is to wipe the device (not ideal). I would recommend using [Nugget Python](https://github.com/leminlimez/Nugget/releases) instead in this case.
+<br>如果这还不起作用，我知道的唯一解决方案就是擦除设备（不太理想）。在这种情况下，我建议改用 [Nugget Python](https://github.com/leminlimez/Nugget/releases)。
 
 ## Credits
 ## 致谢
