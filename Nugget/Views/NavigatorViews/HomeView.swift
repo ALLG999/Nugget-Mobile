@@ -18,9 +18,9 @@ struct HomeView: View {
     @State var path = NavigationPath()
     
     // Prefs
-    @AppStorage("AutoReboot") var autoReboot: Bool = true
-    @AppStorage("PairingFile") var pairingFile: String?
-    @AppStorage("SkipSetup") var skipSetup: Bool = true
+    @AppStorage("自动重启") var autoReboot: Bool = true
+    @AppStorage("配对文件") var pairingFile: String?
+    @AppStorage("跳过设置") var skipSetup: Bool = true
     
     var body: some View {
         NavigationStack(path: $path) {
@@ -131,8 +131,8 @@ struct HomeView: View {
                                     showErrorAlert.toggle()
                                 }
                             })
-                            .alert("Error", isPresented: $showErrorAlert) {
-                                Button("OK") {}
+                            .alert("错误", isPresented: $showErrorAlert) {
+                                Button("好的") {}
                             } message: {
                                 Text(lastError ?? "???")
                             }
@@ -182,7 +182,7 @@ struct HomeView: View {
                 }
             }
             .alert("错误", isPresented: $showErrorAlert) {
-                Button("完成") {}
+                Button("好的") {}
             } message: {
                 Text(lastError ?? "???")
             }
