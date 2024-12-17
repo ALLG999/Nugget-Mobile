@@ -11,7 +11,7 @@
 <br>This will not work on iOS 18.2 beta 2 or newer. Please do not make issues about this, it will not be fixed. You will have to use the [pc version of Nugget](https://github.com/leminlimez/Nugget) unless a fix comes in the future.
 <br>这在iOS 18.2 beta 2或更高版本上不起作用。请不要对此提出问题，它不会被修复。你必须使用[pc版的Nugget](https://github.com/leminlimez/Nugget)除非将来有解决办法。
 <br>A `.mobiledevicepairing` file and wireguard are required in order to use this. Read the [sections](#getting-your-mobiledevicepairing-file) below to see how to get those.
-<br>使用此功能需要一个“.mobiledvicepairing”文件和wireguard。阅读下面的[获取您的 mobiledevicepairing 文件](#获取您的-mobiledevicepairing-文件)，了解如何获取这些文件。
+<br>使用此功能需要一个`.mobiledvicepairing`文件和wireguard。阅读下面的[获取您的 mobiledevicepairing 文件](#获取您的-mobiledevicepairing-文件)，了解如何获取这些文件。
 <br>If you are having issues with minimuxer, see the [Solving Minimuxer Issues](#solving-minimuxer-issues) thread.
 <br>如果您在使用minimuxer时遇到问题，请参阅[解决 Minimuxer 问题](#解决-Minimuxer-问题)线程。
 <br>This uses the sparserestore exploit to write to files outside of the intended restore location, like mobilegestalt.
