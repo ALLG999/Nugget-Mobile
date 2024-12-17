@@ -213,7 +213,7 @@ struct HomeView: View {
             lastError = "请选择您的配对文件以继续。"
             showErrorAlert.toggle()
         } else {
-            lastError = "minimuxer 尚未准备好。请确保您已设置 WiFi 和 WireGuard VPN。
+            lastError = "minimuxer 尚未准备好。请确保您已设置 WiFi 和 WireGuard VPN。"
 "
             showErrorAlert.toggle()
         }
