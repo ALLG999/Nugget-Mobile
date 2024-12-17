@@ -23,15 +23,15 @@
 To get the pairing file, use the following steps:
 <br>要获取配对文件，请使用以下步骤：
 1. Download `jitterbugpair` for your system from here: <https://github.com/osy/Jitterbug/releases/latest>
-   从这里为您的系统下载`jitterbugpair`：<https://github.com/osy/Jitterbug/releases/latest>
+   <br>从这里为您的系统下载`jitterbugpair`：<https://github.com/osy/Jitterbug/releases/latest>
    - **Note:** On mac or linux, you may have to run the terminal command `chmod +x ./jitterbugpair` in the same directory.
    - 注意:在mac或linux上，您可能需要运行终端命令`chmod+x/jitterbugpair位于同一目录中。
 2. Run the program by either double clicking it or using terminal/powershell
-   双击程序或使用终端/powershell运行程序
+   <br>双击程序或使用终端/powershell运行程序
 3. Share the `.mobiledevicepairing` file to your iOS device
-   将“.mobiledvicepairing”文件共享到您的iOS设备
+   <br>将“.mobiledvicepairing”文件共享到您的iOS设备
 4. Open the app and select the pairing file
-   打开应用程序并选择配对文件
+   <br>打开应用程序并选择配对文件
 
 You should only have to do this once unless you lose the file and delete the app's data.
 <br>除非你丢失了文件并删除了应用程序的数据，否则你应该只做一次。
@@ -39,13 +39,13 @@ You should only have to do this once unless you lose the file and delete the app
 ## Setting Up WireGuard
 ## 设置WireGuard
 1. Download [WireGuard](<https://apps.apple.com/us/app/wireguard/id1441195209>) on the iOS App Store.
-   在 iOS App Store 下载 [WireGuard](<https://apps.apple.com/us/app/wireguard/id1441195209>)。
+   <br>在 iOS App Store 下载 [WireGuard](<https://apps.apple.com/us/app/wireguard/id1441195209>)。
 2. Download [SideStore's config file](https://github.com/sidestore/sidestore/releases/download/0.1.1/sidestore.conf) on your iOS device
-   在您的 iOS 设备上下载 [SideStore 的配置文件](https://github.com/sidestore/sidestore/releases/download/0.1.1/sidestore.conf)
+   <br>在您的 iOS 设备上下载 [SideStore 的配置文件](https://github.com/sidestore/sidestore/releases/download/0.1.1/sidestore.conf)
 3. Share the config file to WireGuard using the share menu
-   使用共享菜单将配置文件共享给 WireGuard
+   <br>使用共享菜单将配置文件共享给 WireGuard
 4. Enable it and run Nugget
-   启用它并运行 Nugge
+   <br>启用它并运行 Nugge
 
 ## Solving Minimuxer Issues
 ## 解决 Minimuxer 问题
@@ -54,19 +54,19 @@ If you have used Cowabunga Lite before, you may experience issues with minimuxer
 <br>These steps should solve the problem, however it is not an end-all be-all solution.
 <br>这些步骤应该可以解决问题，但是并不是万能的解决方案。
 1. Download [Nugget Python](https://github.com/leminlimez/Nugget) and follow the steps in the readme to install python and the requirements
-   下载 [Nugget Python](https://github.com/leminlimez/Nugget) 并按照自述文件中的步骤安装 python 和满足要求
+   <br>下载 [Nugget Python](https://github.com/leminlimez/Nugget) 并按照自述文件中的步骤安装 python 和满足要求
 2. Connect your device and (in terminal) type `python3 fix-minimuxer.py` (or `python fix-minimuxer.py` if it doesn't work)
-   连接你的设备并（在终端中）输入“python3 fix-minimuxer.py”（如果不起作用，则输入“python fix-minimuxer.py”）
+   <br>连接你的设备并（在终端中）输入“python3 fix-minimuxer.py”（如果不起作用，则输入“python fix-minimuxer.py”）
 
 Your device should reboot. After it reboots, try Nugget mobile now. If it still doesn't work, follow the steps below:
 <br>您的设备应重新启动。重新启动后，立即尝试 Nugget mobile。如果仍然不起作用，请按照以下步骤操作：
 
 3. After your device reboots, go to `[Settings] -> General -> Transfer or Reset iPhone`
-   设备重启后，转到“[设置] -> 通用 -> 传输或重置 iPhone”
+   <br>设备重启后，转到“[设置] -> 通用 -> 传输或重置 iPhone”
 4. Tap `Reset` and then `Reset Location & Privacy`
-   点击“重置”，然后点击“重置位置和隐私”
+   <br>点击“重置”，然后点击“重置位置和隐私”
 5. Nugget mobile should work now. If it doesn't, try getting a new pairing file.
-   Nugget mobile 现在应该可以正常工作了。如果不行，请尝试获取新的配对文件。
+   <br>Nugget mobile 现在应该可以正常工作了。如果不行，请尝试获取新的配对文件。
 
 If the steps above don't work for you, try using `Cowabunga Lite` and clicking the `Deep Clean` button, then try the steps again.
 <br>如果上述步骤对您不起作用，请尝试使用“Cowabunga Lite”并单击“深度清洁”按钮，然后再次尝试这些步骤。
