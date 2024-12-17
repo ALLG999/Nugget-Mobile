@@ -33,10 +33,10 @@ struct EligibilityView: View {
                 Section {
                     Toggle(isOn: $aiEnabler) {
                         HStack {
-                            Text("启用 Apple Intelligence")
+                            Text("Enable Apple Intelligence")
                             Spacer()
                             Button(action: {
-                                showInfoAlert(NSLocalizedString("在不受支持的设备上启用Apple Intelligence。下载可能需要很长时间，请耐心检查[设置]->常规->iPhone/iPad存储->iOS->Apple Intelligence是否正在下载。\n\n如果不适用，请尝试重新应用。", comment: "AI信息弹出窗口"))
+                                showInfoAlert(NSLocalizedString("Enables Apple Intelligence on unsupported devices. It may take a long time to download, be patient and check [Settings] -> General -> iPhone/iPad Storage -> iOS -> Apple Intelligence to see if it is downloading.\n\nIf it doesn't apply, try applying again.", comment: "AI info popup"))
                             }) {
                                 Image(systemName: "info.circle")
                             }
@@ -47,10 +47,10 @@ struct EligibilityView: View {
                     if aiEnabler {
                         Toggle(isOn: $changeDeviceModel) {
                             HStack {
-                                Text("虚假的设备型号")
+                                Text("Spoof Device Model")
                                 Spacer()
                                 Button(action: {
-                                    showInfoAlert(NSLocalizedString("将您的设备型号复制到iPhone 16（或iPad Pro M4），以便您下载AI型号。\n\n打开此选项可下载模型，然后关闭此选项并在下载模型后重新应用。\n\n注意：启用此选项后，会破坏Face ID。还原文件将修复此问题。", comment: "设备型号更改信息弹出窗口"))
+                                    showInfoAlert(NSLocalizedString("Spoofs your device model to iPhone 16 (or iPad Pro M4), allowing you to download the AI models.\n\nTurn this on to download the models, then turn this off and reapply after the models are downloading.\n\nNote: While this is on, it breaks Face ID. Reverting the file will fix it.", comment: "Device model changer info popup"))
                                 }) {
                                     Image(systemName: "info.circle")
                                 }
@@ -60,12 +60,12 @@ struct EligibilityView: View {
                         }
                     }
                 } header: {
-                    Text("AI 推动者")
+                    Text("AI Enabler")
                 }
             }
         }
         .tweakToggle(for: .Eligibility)
-        .navigationTitle("合格")
+        .navigationTitle("Eligibility")
         .onAppear {
             euEnabler = manager.euEnabler
             aiEnabler = manager.aiEnabler
