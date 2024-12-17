@@ -25,11 +25,11 @@ To get the pairing file, use the following steps:
 1. Download `jitterbugpair` for your system from here: <https://github.com/osy/Jitterbug/releases/latest>
    <br>从这里为您的系统下载`jitterbugpair`：<https://github.com/osy/Jitterbug/releases/latest>
    - **Note:** On mac or linux, you may have to run the terminal command `chmod +x ./jitterbugpair` in the same directory.
-   - **注意:** 在mac或linux上，您可能需要运行终端命令`chmod+x/jitterbugpair位于同一目录中。
+   - **注意:** 在mac或linux上，您可能需要在同一目录中运行终端命令`chmod+x/jitterbugpair`。
 2. Run the program by either double clicking it or using terminal/powershell
    <br>双击程序或使用终端/powershell运行程序
 3. Share the `.mobiledevicepairing` file to your iOS device
-   <br>将“.mobiledvicepairing”文件共享到您的iOS设备
+   <br>将`.mobiledvicepairing`文件共享到您的iOS设备
 4. Open the app and select the pairing file
    <br>打开应用程序并选择配对文件
 
@@ -56,20 +56,20 @@ If you have used Cowabunga Lite before, you may experience issues with minimuxer
 1. Download [Nugget Python](https://github.com/leminlimez/Nugget) and follow the steps in the readme to install python and the requirements
    <br>下载 [Nugget Python](https://github.com/leminlimez/Nugget) 并按照自述文件中的步骤安装 python 和满足要求
 2. Connect your device and (in terminal) type `python3 fix-minimuxer.py` (or `python fix-minimuxer.py` if it doesn't work)
-   <br>连接你的设备并（在终端中）输入“python3 fix-minimuxer.py”（如果不起作用，则输入“python fix-minimuxer.py”）
+   <br>连接你的设备并（在终端中）输入`python3 fix-minimuxer.py`（如果不起作用，则输入`python fix-minimuxer.py`）
 
 Your device should reboot. After it reboots, try Nugget mobile now. If it still doesn't work, follow the steps below:
 <br>您的设备应重新启动。重新启动后，立即尝试 Nugget mobile。如果仍然不起作用，请按照以下步骤操作：
 
 3. After your device reboots, go to `[Settings] -> General -> Transfer or Reset iPhone`
-   <br>设备重启后，转到“[设置] -> 通用 -> 传输或重置 iPhone”
+   <br>设备重启后，转到`[设置] -> 通用 -> 传输或重置 iPhone`
 4. Tap `Reset` and then `Reset Location & Privacy`
-   <br>点击“重置”，然后点击“重置位置和隐私”
+   <br>点击`重置`，然后点击`重置位置和隐私`
 5. Nugget mobile should work now. If it doesn't, try getting a new pairing file.
    <br>Nugget mobile 现在应该可以正常工作了。如果不行，请尝试获取新的配对文件。
 
 If the steps above don't work for you, try using `Cowabunga Lite` and clicking the `Deep Clean` button, then try the steps again.
-<br>如果上述步骤对您不起作用，请尝试使用“Cowabunga Lite”并单击“深度清洁”按钮，然后再次尝试这些步骤。
+<br>如果上述步骤对您不起作用，请尝试使用`Cowabunga Lite`并单击`深度清洁`按钮，然后再次尝试这些步骤。
 If not even that works, the only solution I know is to wipe the device (not ideal). I would recommend using [Nugget Python](https://github.com/leminlimez/Nugget) instead in this case.
 <br>如果这还不起作用，我知道的唯一解决方案就是擦除设备（不太理想）。在这种情况下，我建议改用 [Nugget Python](https://github.com/leminlimez/Nugget)。
 
