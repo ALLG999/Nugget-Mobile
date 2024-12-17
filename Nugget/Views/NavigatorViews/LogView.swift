@@ -72,15 +72,15 @@ struct LogView: View {
                         } else {
                             succeeded = ApplyHandler.shared.apply(udid: udid, skipSetup: skipSetup, trollstore: false)
                         }
-                        if succeeded && (log.contains("Restore Successful") || log.contains("crash_on_purpose")) {
+                        if succeeded && (log.contains("恢复成功") || log.contains("crash_on_purpose")) {
                             if autoReboot {
-                                print("Rebooting device...")
+                                print("正在重新启动设备...")
                                 MobileDevice.rebootDevice(udid: udid)
                             } else {
                                 UIApplication.shared.alert(title: "成功！", body: "请重新启动您的设备才能查看更改。")
                             }
                         /* Error Dialogs Below */
-                        } else if log.contains("Find My") {
+                        } else if log.contains("查找我的") {
                             UIApplication.shared.alert(body: "必须禁用“查找”才能使用此工具。\n\n从“设置”中禁用“查找”（设置 -> [您的姓名] ->“查找”），然后重试。")
                         } else if log.contains("无法从 mobilebackup2 接收") {
                             UIApplication.shared.alert(body: "无法接收来自 mobilebackup2 的请求。请重新启动应用程序并重试。")
@@ -89,7 +89,7 @@ struct LogView: View {
                 }
             }
         }
-        .navigationTitle("Log output")
+        .navigationTitle("日志输出")
     }
     
     init(resetting: Bool, autoReboot: Bool, skipSetup: Bool) {
