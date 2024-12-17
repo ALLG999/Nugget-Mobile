@@ -81,7 +81,7 @@ struct StatusBarView: View {
         "4G", // 3
         "LTE", // 4
         "WiFi", // 5
-        "Personal Hotspot", // 6
+        "个人热点", // 6
         "1x", // 7
         "5Gᴇ", // 8
         "LTE-A", // 9
@@ -100,7 +100,7 @@ struct StatusBarView: View {
                 Text("Betas, use with caution. Have a backup.\n测试版，请谨慎使用。准备一个备份。")
             }
             Section {
-                Picker(selection: $radioPrimarySelection, label: Text("Visibility")) {
+                Picker(selection: $radioPrimarySelection, label: Text("显示")) {
                     Text("默认").tag(1)
                     Text("强制显示").tag(2)
                     Text("强制隐藏").tag(3)
@@ -158,9 +158,9 @@ struct StatusBarView: View {
                     carrierTextEnabled = StatusManager.sharedInstance().isCarrierOverridden()
                 })
                 TextField("主要载体文本", text: $carrierText).onChange(of: carrierText, perform: { nv in
-                    // This is important.
-                    // Make sure the UTF-8 representation of the string does not exceed 100
-                    // Otherwise the struct will overflow
+                    // 这很重要。
+                    // 确保字符串的 UTF-8 表示形式不超过 100
+                    // 否则结构将会溢出
                     var safeNv = nv
                     while safeNv.utf8CString.count > 100 {
                         safeNv = String(safeNv.prefix(safeNv.count - 1))
@@ -182,9 +182,9 @@ struct StatusBarView: View {
                     primaryServiceBadgeTextEnabled = StatusManager.sharedInstance().isPrimaryServiceBadgeOverridden()
                 })
                 TextField("主要服务徽章文本", text: $primaryServiceBadgeText).onChange(of: primaryServiceBadgeText, perform: { nv in
-                    // This is important.
-                    // Make sure the UTF-8 representation of the string does not exceed 100
-                    // Otherwise the struct will overflow
+                    // 这很重要。
+                    // 确保字符串的 UTF-8 表示形式不超过 100
+                    // 否则结构将会溢出
                     var safeNv = nv
                     while safeNv.utf8CString.count > 100 {
                         safeNv = String(safeNv.prefix(safeNv.count - 1))
@@ -292,9 +292,9 @@ struct StatusBarView: View {
                     secondaryCarrierTextEnabled = StatusManager.sharedInstance().isSecondaryCarrierOverridden()
                 })
                 TextField("次要载体文本", text: $secondaryCarrierText).onChange(of: secondaryCarrierText, perform: { nv in
-                    // This is important.
-                    // Make sure the UTF-8 representation of the string does not exceed 100
-                    // Otherwise the struct will overflow
+                    // 这很重要。
+                    // 确保字符串的 UTF-8 表示形式不超过 100
+                    // 否则结构将会溢出
                     var safeNv = nv
                     while safeNv.utf8CString.count > 100 {
                         safeNv = String(safeNv.prefix(safeNv.count - 1))
@@ -316,9 +316,9 @@ struct StatusBarView: View {
                     secondaryServiceBadgeTextEnabled = StatusManager.sharedInstance().isSecondaryServiceBadgeOverridden()
                 })
                 TextField("辅助业务徽章文本", text: $secondaryServiceBadgeText).onChange(of: secondaryServiceBadgeText, perform: { nv in
-                    // This is important.
-                    // Make sure the UTF-8 representation of the string does not exceed 100
-                    // Otherwise the struct will overflow
+                    // 这很重要。
+                    // 确保字符串的 UTF-8 表示形式不超过 100
+                    // 否则结构将会溢出
                     var safeNv = nv
                     while safeNv.utf8CString.count > 100 {
                         safeNv = String(safeNv.prefix(safeNv.count - 1))
@@ -331,7 +331,7 @@ struct StatusBarView: View {
                     secondaryServiceBadgeText = StatusManager.sharedInstance().getSecondaryServiceBadgeOverride()
                 })
                 
-                Toggle("Change Secondary Data Network Type", isOn: $secondaryDataNetworkTypeEnabled).onChange(of: secondaryDataNetworkTypeEnabled, perform: { nv in
+                Toggle("更改辅助数据网络类型", isOn: $secondaryDataNetworkTypeEnabled).onChange(of: secondaryDataNetworkTypeEnabled, perform: { nv in
                     if nv {
                         StatusManager.sharedInstance().setSecondaryDataNetworkType(Int32(secondaryDataNetworkType))
                     } else {
@@ -378,9 +378,9 @@ struct StatusBarView: View {
                     crumbTextEnabled = StatusManager.sharedInstance().isCrumbOverridden()
                 })
                 TextField("面包屑文本", text: $crumbText).onChange(of: crumbText, perform: { nv in
-                    // This is important.
-                    // Make sure the UTF-8 representation of the string does not exceed 256
-                    // Otherwise the struct will overflow
+                    // 这很重要。
+                    // 确保字符串的 UTF-8 表示形式不超过 256
+                    // 否则结构将会溢出
                     var safeNv = nv
                     while (safeNv + " ▶").utf8CString.count > 256 {
                         safeNv = String(safeNv.prefix(safeNv.count - 1))
@@ -402,9 +402,9 @@ struct StatusBarView: View {
                     batteryDetailEnabled = StatusManager.sharedInstance().isBatteryDetailOverridden()
                 })
                 TextField("电池详细信息文本", text: $batteryDetailText).onChange(of: batteryDetailText, perform: { nv in
-                    // This is important.
-                    // Make sure the UTF-8 representation of the string does not exceed 150
-                    // Otherwise the struct will overflow
+                    // 这很重要。
+                    // 确保字符串的 UTF-8 表示形式不超过 150
+                    // 否则结构将会溢出
                     var safeNv = nv
                     while safeNv.utf8CString.count > 150 {
                         safeNv = String(safeNv.prefix(safeNv.count - 1))
@@ -426,10 +426,10 @@ struct StatusBarView: View {
                     }).onAppear(perform: {
                         dateTextEnabled = StatusManager.sharedInstance().isDateOverridden()
                     })
-                    TextField("Status Bar Date Text", text: $dateText).onChange(of: dateText, perform: { nv in
-                        // This is important.
-                        // Make sure the UTF-8 representation of the string does not exceed 64
-                        // Otherwise the struct will overflow
+                    TextField("状态栏日期文本", text: $dateText).onChange(of: dateText, perform: { nv in
+                    // 这很重要。
+                    // 确保字符串的 UTF-8 表示形式不超过 64
+                    // 否则结构将会溢出
                         var safeNv = nv
                         while safeNv.utf8CString.count > 256 {
                             safeNv = String(safeNv.prefix(safeNv.count - 1))
@@ -452,9 +452,9 @@ struct StatusBarView: View {
                     timeTextEnabled = StatusManager.sharedInstance().isTimeOverridden()
                 })
                 TextField("状态栏时间文本", text: $timeText).onChange(of: timeText, perform: { nv in
-                    // This is important.
-                    // Make sure the UTF-8 representation of the string does not exceed 64
-                    // Otherwise the struct will overflow
+                    // 这很重要。
+                    // 确保字符串的 UTF-8 表示形式不超过 64
+                    // 否则结构将会溢出
                     var safeNv = nv
                     while safeNv.utf8CString.count > 64 {
                         safeNv = String(safeNv.prefix(safeNv.count - 1))
