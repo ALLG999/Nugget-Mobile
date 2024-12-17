@@ -205,7 +205,7 @@ struct HomeView: View {
                 path.append(reverting ? "恢复更改" : "应用变更")
             } else if !ApplyHandler.shared.trollstore {
                 // if applying non-exploit files, warn about setup
-                UIApplication.shared.confirmAlert(title: "警告！", body: "您正在应用与漏洞利用无关的文件。这将显示设置屏幕。如果不想继续，请单击“取消”。\n\n设置时，您必须单击\“不传输应用程序和数据”\。\n\n如果您看到屏幕上显示\“iPhone部分设置”\，请不要点击蓝色大按钮。您必须单击\“继续部分安装”\".", onOK: {
+                UIApplication.shared.confirmAlert(title: "警告！", body: "您正在应用与漏洞利用无关的文件。这将显示设置屏幕。如果不想继续，请单击“取消”。\n\n设置时，您必须单击\“不传输应用程序和数据\”。\n\n如果您看到屏幕上显示\“iPhone部分设置\”，请不要点击蓝色大按钮。您必须单击\“继续部分安装\”.", onOK: {
                     path.append(reverting ? "恢复更改" : "应用变更")
                 }, noCancel: false)
             }
