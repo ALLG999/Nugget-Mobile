@@ -29,7 +29,7 @@ struct HomeView: View {
                 Section {
                     
                 } header: {
-                    Label("版本号 \(Bundle.main.releaseVersionNumber ?? "UNKNOWN") (\(Int(buildNumber) != 0 ? "beta \(buildNumber)" : NSLocalizedString("发布", comment:"")))", systemImage: "信息")
+                    Label("Version \(Bundle.main.releaseVersionNumber ?? "UNKNOWN") (\(Int(buildNumber) != 0 ? "beta \(buildNumber)" : NSLocalizedString("发布", comment:"")))", systemImage: "信息")
                 }
                 .listStyle(InsetGroupedListStyle())
                 
@@ -173,16 +173,16 @@ struct HomeView: View {
                 }
                 startMinimuxer()
             }
-            .navigationTitle("Nugget")
+            .navigationTitle("金块")
             .navigationDestination(for: String.self) { view in
-                if view == "ApplyChanges" {
+                if view == "应用变更" {
                     LogView(resetting: false, autoReboot: autoReboot, skipSetup: skipSetup)
-                } else if view == "RevertChanges" {
+                } else if view == "恢复更改" {
                     LogView(resetting: true, autoReboot: autoReboot, skipSetup: skipSetup)
                 }
             }
-            .alert("Error", isPresented: $showErrorAlert) {
-                Button("OK") {}
+            .alert("错误", isPresented: $showErrorAlert) {
+                Button("完成") {}
             } message: {
                 Text(lastError ?? "???")
             }
@@ -202,11 +202,11 @@ struct HomeView: View {
                 // if there are no enabled tweaks then tell the user
                 UIApplication.shared.alert(body: "您没有启用任何调整！请转到工具页面选择一些。")
             } else if ApplyHandler.shared.isExploitOnly() {
-                path.append(reverting ? "RevertChanges" : "ApplyChanges")
+                path.append(reverting ? "恢复更改" : "应用变更")
             } else if !ApplyHandler.shared.trollstore {
                 // if applying non-exploit files, warn about setup
                 UIApplication.shared.confirmAlert(title: "警告！", body: "您正在应用与漏洞利用无关的文件。这将显示设置屏幕。如果不想继续，请单击“取消”。\n\n设置时，您必须单击\“不传输应用程序和数据”\。\n\n如果您看到屏幕上显示\“iPhone部分设置”\，请不要点击蓝色大按钮。您必须单击\“继续部分安装”\".", onOK: {
-                    path.append(reverting ? "RevertChanges" : "ApplyChanges")
+                    path.append(reverting ? "恢复更改" : "应用变更")
                 }, noCancel: false)
             }
         } else if pairingFile == nil {
