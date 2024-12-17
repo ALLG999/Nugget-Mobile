@@ -40,7 +40,7 @@ struct LogView: View {
                     }
                     
                     DispatchQueue.global(qos: .background).async {
-                        print("APPLYING")
+                        print("申请")
                         if ApplyHandler.shared.trollstore {
                             // apply with trollstore
                             var succeeded: Bool = false
