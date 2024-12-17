@@ -214,7 +214,6 @@ struct HomeView: View {
             showErrorAlert.toggle()
         } else {
             lastError = "minimuxer 尚未准备好。请确保您已设置 WiFi 和 WireGuard VPN。"
-"
             showErrorAlert.toggle()
         }
     }
