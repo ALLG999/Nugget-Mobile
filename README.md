@@ -4,7 +4,9 @@
 
 # Nugget (mobile)
 # 金块（移动版）
-
+[![Build](https://github.com/136478738/Nugget-Mobile/actions/workflows/build.yml/badge.svg?branch=main)](https://github.com/136478738/Nugget-Mobile/actions/workflows/build.yml)
+[![X](https://img.shields.io/twitter/follow/V_wo50)](https://x.com/V_wo50)
+<br>本项目基于AGPL-3.0许可证开源 请务必遵循相关规定[https://blog.csdn.net/weixin_43841461/article/details/142106462](https://blog.csdn.net/weixin_43841461/article/details/142106462)
 汉化版本Nugget-Mobile下载地址：<a href="https://nightly.link/136478738/Nugget-Mobile/workflows/build/main/artifact.zip"><img src="https://nightly.link/logo.svg" alt style="width: 20px;" /></a> [nightly.link](https://nightly.link/136478738/Nugget-Mobile/workflows/build/main/artifact.zip)
 <br>Unlock your device's full potential! Should work on all versions iOS 16.0 - 18.2 developer beta 2 (public beta 1).
 <br>释放您设备的全部潜力！应适用于所有版本的iOS 16.0-18.2开发者测试版2（公测版1）。
