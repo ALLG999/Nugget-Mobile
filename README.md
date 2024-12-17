@@ -25,7 +25,7 @@ To get the pairing file, use the following steps:
 1. Download `jitterbugpair` for your system from here: <https://github.com/osy/Jitterbug/releases/latest>
    <br>从这里为您的系统下载`jitterbugpair`：<https://github.com/osy/Jitterbug/releases/latest>
    - **Note:** On mac or linux, you may have to run the terminal command `chmod +x ./jitterbugpair` in the same directory.
-   - 注意:在mac或linux上，您可能需要运行终端命令`chmod+x/jitterbugpair位于同一目录中。
+   - **注意:** 在mac或linux上，您可能需要运行终端命令`chmod+x/jitterbugpair位于同一目录中。
 2. Run the program by either double clicking it or using terminal/powershell
    <br>双击程序或使用终端/powershell运行程序
 3. Share the `.mobiledevicepairing` file to your iOS device
