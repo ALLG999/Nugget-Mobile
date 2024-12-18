@@ -247,7 +247,7 @@ class ApplyHandler: ObservableObject {
                 }
                 return true
             } else {
-                print("No files to restore!")
+                print("没有可恢复的文件！")
                 return false
             }
         } catch {
