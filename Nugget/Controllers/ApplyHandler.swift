@@ -166,10 +166,10 @@ class ApplyHandler: ObservableObject {
                         return false
                     }
                 } else {
-                    print("Failed to convert build number to String")
+                    print("无法将版本号转换为字符串")
                 }
             } else {
-                print("sysctlbyname failed with error: \(String(cString: strerror(errno)))")
+                print("sysctlbyname 失败，错误如下： \(String(cString: strerror(errno)))")
             }
             return true
         }
@@ -195,10 +195,10 @@ class ApplyHandler: ObservableObject {
                         return false
                     }
                 } else {
-                    print("Failed to convert build number to String")
+                    print("无法将版本号转换为字符串")
                 }
             } else {
-                print("sysctlbyname failed with error: \(String(cString: strerror(errno)))")
+                print("sysctlbyname 失败，错误如下： \(String(cString: strerror(errno)))")
             }
             return true
         }
@@ -280,7 +280,7 @@ class ApplyHandler: ObservableObject {
                 }
                 return true
             } else {
-                print("No files to restore!")
+                print("没有要恢复的文件！")
                 return false
             }
         } catch {
