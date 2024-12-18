@@ -32,8 +32,7 @@ struct GestaltView: View {
         var minVersion: Version = Version(string: "16.0")
     }
     
-    @State private var CurrentSubType: Int = "手势/灵动岛"
-   // @State private var CurrentSubType: Int = -1
+    @State private var CurrentSubType: Int = -1
     @State private var CurrentSubTypeDisplay: String = "默认"
     
     @State private var modifyResolution: Bool = false
