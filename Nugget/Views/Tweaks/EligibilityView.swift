@@ -17,7 +17,7 @@ struct EligibilityView: View {
     
     var body: some View {
         List {
-             MARK: EU Enabler
+            // MARK: EU Enabler
             Section {
                 Toggle(isOn: $euEnabler) {
                     Text("启用欧盟地区侧载")
