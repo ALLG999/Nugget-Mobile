@@ -32,17 +32,17 @@ struct GestaltView: View {
         var minVersion: Version = Version(string: "16.0")
     }
     
-    @State private var CurrentSubType: Int = -1
+    @State private var CurrentSubType: Int = -1 "手势/灵动岛"
     @State private var CurrentSubTypeDisplay: String = "默认"
     
     @State private var modifyResolution: Bool = false
-    private let resMode: Int = MobileGestaltManager.shared.getRdarFixMode()
-    private let resTitle: String = MobileGestaltManager.shared.getRdarFixTitle()
+    private let resMode: Int = MobileGestaltManager.shared.getRdarFixMode() "更改设备型号名称"
+    private let resTitle: String = MobileGestaltManager.shared.getRdarFixTitle() "设备型号名称 ALLG"
     
     @State private var deviceModelChanged: Bool = false
     @State private var deviceModelName: String = ""
     
-    // list of device subtype options
+    // 设备子类型选项列表
     @State var deviceSubTypes: [DeviceSubType] = [
         .init(key: -1, title: NSLocalizedString("默认", comment: "默认设备类型")),
         .init(key: 2436, title: NSLocalizedString("iPhone X 手势", comment: "x 手势")),
