@@ -33,7 +33,7 @@ struct GestaltView: View {
     }
     
     @State private var CurrentSubType: Int = -1
-    @State private var CurrentSubTypeDisplay: String = "Default"
+    @State private var CurrentSubTypeDisplay: String = "默认"
     
     @State private var modifyResolution: Bool = false
     private let resMode: Int = MobileGestaltManager.shared.getRdarFixMode()
