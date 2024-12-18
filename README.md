@@ -1,4 +1,6 @@
-<p align="center"><img src="https://socialify.git.ci/136478738/Nugget-Mobile/image?description=1&descriptionEditable=ALLG%E6%B1%89%E5%8C%96&font=Bitter&forks=1&issues=1&language=1&name=1&owner=1&pattern=Floating%20Cogs&pulls=1&stargazers=1&theme=Auto" alt="Nugget-Mobile"/></p>
+<p align="center">
+   <img src="https://socialify.git.ci/136478738/Nugget-Mobile/image?description=1&descriptionEditable=ALLG%E6%B1%89%E5%8C%96&font=Bitter&forks=1&issues=1&language=1&name=1&owner=1&pattern=Floating%20Cogs&pulls=1&stargazers=1&theme=Auto" alt="Nugget-Mobile"/>
+</p>
 
 ![Artboard](https://github.com/leminlimez/Nugget-Mobile/blob/1881fdc2b721fd2675a2909e7fbc24769d11bb53/readme-images/icon.png)
 
