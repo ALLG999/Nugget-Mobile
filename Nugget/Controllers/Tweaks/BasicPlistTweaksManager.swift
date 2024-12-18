@@ -30,33 +30,33 @@ class BasicPlistTweaksManager: ObservableObject {
     static var managers: [BasicPlistTweaksManager] = [
         /* SpringBoard Manager */
         .init(page: .SpringBoard, tweaks: [
-            PlistTweak(key: "LockScreenFootnote", title: "Lock Screen Footnote Text", fileLocation: .footnote, tweakType: .text, placeholder: "Footnote Text"),
-            PlistTweak(key: "SBDontLockAfterCrash", title: "Disable Lock After Respring", fileLocation: .springboard, tweakType: .toggle),
-            PlistTweak(key: "SBDontDimOrLockOnAC", title: "Disable Screen Dimming While Charging", fileLocation: .springboard, tweakType: .toggle),
-            PlistTweak(key: "SBHideLowPowerAlerts", title: "Disable Low Battery Alerts", fileLocation: .springboard, tweakType: .toggle),
-            PlistTweak(key: "SBNeverBreadcrumb", title: "Disable Breadcrumb", fileLocation: .springboard, tweakType: .toggle),
-            PlistTweak(key: "SBShowSupervisionTextOnLockScreen", title: "Show Supervision Text on Lock Screen", fileLocation: .springboard, tweakType: .toggle),
-            PlistTweak(key: "CCSPresentationGesture", title: "Disable CC Presentation Gesture", fileLocation: .springboard, tweakType: .toggle, invertValue: true),
-            PlistTweak(key: "SBExtendedDisplayOverrideSupportForAirPlayAndDontFileRadars", title: "Enable AirPlay support for Stage Manager", fileLocation: .springboard, tweakType: .toggle),
-//            PlistTweak(key: "WiFiManagerLoggingEnabled", title: "Show WiFi Debugger", fileLocation: .wifiDebug, tweakType: .toggle),
-//            PlistTweak(key: "DiscoverableMode", title: "Permanently Allow Receiving AirDrop from Everyone", fileLocation: .airdrop, tweakType: .toggle)
+            PlistTweak(key: "LockScreenFootnote", title: "锁定屏幕脚注文本", fileLocation: .footnote, tweakType: .text, placeholder: "Footnote Text"),
+            PlistTweak(key: "SBDontLockAfterCrash", title: "重启后禁用锁定", fileLocation: .springboard, tweakType: .toggle),
+            PlistTweak(key: "SBDontDimOrLockOnAC", title: "充电时禁用屏幕变暗", fileLocation: .springboard, tweakType: .toggle),
+            PlistTweak(key: "SBHideLowPowerAlerts", title: "禁用低电量警报", fileLocation: .springboard, tweakType: .toggle),
+            PlistTweak(key: "SBNeverBreadcrumb", title: "禁用面包屑", fileLocation: .springboard, tweakType: .toggle),
+            PlistTweak(key: "SBShowSupervisionTextOnLockScreen", title: "在锁定屏幕上显示监管文本", fileLocation: .springboard, tweakType: .toggle),
+            PlistTweak(key: "CCSPresentationGesture", title: "禁用 CC 演示手势", fileLocation: .springboard, tweakType: .toggle, invertValue: true),
+            PlistTweak(key: "SBExtendedDisplayOverrideSupportForAirPlayAndDontFileRadars", title: "为 Stage Manager 启用 AirPlay 支持", fileLocation: .springboard, tweakType: .toggle),
+            PlistTweak(key: "WiFiManagerLoggingEnabled", title: "显示 WiFi 调试器", fileLocation: .wifiDebug, tweakType: .toggle),
+            PlistTweak(key: "DiscoverableMode", title: "永久允许接收所有人的 AirDrop", fileLocation: .airdrop, tweakType: .toggle)
         ]),
         /* Internal Options Manager */
         .init(page: .Internal, tweaks: [
-            .init(key: "UIStatusBarShowBuildVersion", title: "Show Build Version in Status Bar", fileLocation: .globalPreferences, tweakType: .toggle),
-            .init(key: "NSForceRightToLeftWritingDirection", title: "Force Right-to-Left Layout", fileLocation: .globalPreferences, tweakType: .toggle),
-            .init(key: "MetalForceHudEnabled", title: "Enable Metal HUD Debug", fileLocation: .globalPreferences, tweakType: .toggle),
-            .init(key: "AccessoryDeveloperEnabled", title: "Enable Accessory Debugging", fileLocation: .globalPreferences, tweakType: .toggle),
-            .init(key: "iMessageDiagnosticsEnabled", title: "Enable iMessage Debugging", fileLocation: .globalPreferences, tweakType: .toggle),
-            .init(key: "IDSDiagnosticsEnabled", title: "Enable Continuity Debugging", fileLocation: .globalPreferences, tweakType: .toggle),
-            .init(key: "VCDiagnosticsEnabled", title: "Enable FaceTime Debugging", fileLocation: .globalPreferences, tweakType: .toggle),
-            .init(key: "debugGestureEnabled", title: "Enable App Store Debug Gesture", fileLocation: .appStore, tweakType: .toggle),
-            .init(key: "DebugModeEnabled", title: "Enable Notes App Debug Mode", fileLocation: .notes, tweakType: .toggle),
-            .init(key: "BKDigitizerVisualizeTouches", title: "Show Touches With Debug Info", fileLocation: .backboardd, tweakType: .toggle),
-            .init(key: "BKHideAppleLogoOnLaunch", title: "Hide Respring Icon", fileLocation: .backboardd, tweakType: .toggle),
-            .init(key: "EnableWakeGestureHaptic", title: "Vibrate on Raise-to-Wake", fileLocation: .coreMotion, tweakType: .toggle),
-            .init(key: "PlaySoundOnPaste", title: "Play Sound on Paste", fileLocation: .pasteboard, tweakType: .toggle),
-            .init(key: "AnnounceAllPastes", title: "Show Notifications for System Pastes", fileLocation: .pasteboard, tweakType: .toggle)
+            .init(key: "UIStatusBarShowBuildVersion", title: "在状态栏中显示构建版本", fileLocation: .globalPreferences, tweakType: .toggle),
+            .init(key: "NSForceRightToLeftWritingDirection", title: "强制从右到左布局", fileLocation: .globalPreferences, tweakType: .toggle),
+            .init(key: "MetalForceHudEnabled", title: "启用 Metal HUD 调试", fileLocation: .globalPreferences, tweakType: .toggle),
+            .init(key: "AccessoryDeveloperEnabled", title: "启用配件调试", fileLocation: .globalPreferences, tweakType: .toggle),
+            .init(key: "iMessageDiagnosticsEnabled", title: "启用 iMessage 调试", fileLocation: .globalPreferences, tweakType: .toggle),
+            .init(key: "IDSDiagnosticsEnabled", title: "启用连续性调试", fileLocation: .globalPreferences, tweakType: .toggle),
+            .init(key: "VCDiagnosticsEnabled", title: "启用 FaceTime 调试", fileLocation: .globalPreferences, tweakType: .toggle),
+            .init(key: "debugGestureEnabled", title: "启用 App Store 调试发送", fileLocation: .appStore, tweakType: .toggle),
+            .init(key: "DebugModeEnabled", title: "启用 Notes 应用调试模式", fileLocation: .notes, tweakType: .toggle),
+            .init(key: "BKDigitizerVisualizeTouches", title: "显示带有调试信息的触摸", fileLocation: .backboardd, tweakType: .toggle),
+            .init(key: "BKHideAppleLogoOnLaunch", title: "隐藏注销图标", fileLocation: .backboardd, tweakType: .toggle),
+            .init(key: "EnableWakeGestureHaptic", title: "唤醒时振动", fileLocation: .coreMotion, tweakType: .toggle),
+            .init(key: "PlaySoundOnPaste", title: "粘贴时播放声音", fileLocation: .pasteboard, tweakType: .toggle),
+            .init(key: "AnnounceAllPastes", title: "显示系统粘贴通知", fileLocation: .pasteboard, tweakType: .toggle)
         ])
     ]
     
