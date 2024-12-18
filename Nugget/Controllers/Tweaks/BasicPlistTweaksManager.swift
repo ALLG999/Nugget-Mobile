@@ -30,7 +30,7 @@ class BasicPlistTweaksManager: ObservableObject {
     static var managers: [BasicPlistTweaksManager] = [
         /* SpringBoard Manager */
         .init(page: .SpringBoard, tweaks: [
-            PlistTweak(key: "LockScreenFootnote", title: "锁定屏幕脚注文本", fileLocation: .footnote, tweakType: .text, placeholder: "Footnote Text"),
+            PlistTweak(key: "LockScreenFootnote", title: "锁定屏幕脚注文本", fileLocation: .footnote, tweakType: .text, placeholder: "脚注文本 ALLG"),
             PlistTweak(key: "SBDontLockAfterCrash", title: "重启后禁用锁定", fileLocation: .springboard, tweakType: .toggle),
             PlistTweak(key: "SBDontDimOrLockOnAC", title: "充电时禁用屏幕变暗", fileLocation: .springboard, tweakType: .toggle),
             PlistTweak(key: "SBHideLowPowerAlerts", title: "禁用低电量警报", fileLocation: .springboard, tweakType: .toggle),
