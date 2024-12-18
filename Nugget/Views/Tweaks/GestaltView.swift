@@ -32,12 +32,13 @@ struct GestaltView: View {
         var minVersion: Version = Version(string: "16.0")
     }
     
-    @State private var CurrentSubType: Int = -1 "手势/灵动岛"
+    @State private var CurrentSubType: Int = "手势/灵动岛"
+   // @State private var CurrentSubType: Int = -1
     @State private var CurrentSubTypeDisplay: String = "默认"
     
     @State private var modifyResolution: Bool = false
-    private let resMode: Int = MobileGestaltManager.shared.getRdarFixMode() "更改设备型号名称"
-    private let resTitle: String = MobileGestaltManager.shared.getRdarFixTitle() "设备型号名称 ALLG"
+    private let resMode: Int = MobileGestaltManager.shared.getRdarFixMode()
+    private let resTitle: String = MobileGestaltManager.shared.getRdarFixTitle()
     
     @State private var deviceModelChanged: Bool = false
     @State private var deviceModelName: String = ""
