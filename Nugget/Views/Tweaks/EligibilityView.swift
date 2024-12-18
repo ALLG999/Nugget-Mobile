@@ -17,16 +17,16 @@ struct EligibilityView: View {
     
     var body: some View {
         List {
-            // MARK: EU Enabler
-//            Section {
-//                Toggle(isOn: $euEnabler) {
-//                    Text("启用欧盟地区侧载")
-//                }.onChange(of: euEnabler) { nv in
-//                    manager.euEnabler = nv
-//                }
-//            } header: {
-//                Text("启动")
-//            }
+             MARK: EU Enabler
+            Section {
+                Toggle(isOn: $euEnabler) {
+                    Text("启用欧盟地区侧载")
+                }.onChange(of: euEnabler) { nv in
+                    manager.euEnabler = nv
+                }
+            } header: {
+                Text("启动")
+            }
             
             // MARK: AI Enabler
             if #available(iOS 18.1, *) {
