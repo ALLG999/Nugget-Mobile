@@ -1,12 +1,12 @@
 <p align="center">
-   <img src="https://socialify.git.ci/136478738/Nugget-Mobile/image?description=1&descriptionEditable=ALLG%E6%B1%89%E5%8C%96&font=Bitter&forks=1&issues=1&language=1&name=1&owner=1&pattern=Floating%20Cogs&pulls=1&stargazers=1&theme=Auto" alt="Nugget-Mobile"/>
+   <img src="https://socialify.git.ci/ALLG999/Nugget-Mobile/image?description=1&descriptionEditable=ALLG%E6%B1%89%E5%8C%96&font=Bitter&forks=1&issues=1&language=1&name=1&owner=1&pattern=Floating%20Cogs&pulls=1&stargazers=1&theme=Auto" alt="Nugget-Mobile"/>
 </p>
 
 ![Artboard](https://github.com/leminlimez/Nugget-Mobile/blob/1881fdc2b721fd2675a2909e7fbc24769d11bb53/readme-images/icon.png)
 
 # Nugget (mobile)
 # 金块（移动版）
-[![Build](https://github.com/136478738/Nugget-Mobile/actions/workflows/build.yml/badge.svg?branch=main)](https://github.com/136478738/Nugget-Mobile/actions/workflows/build.yml)
+[![Build](https://github.com/ALLG999/Nugget-Mobile/actions/workflows/build.yml/badge.svg?branch=main)](https://github.com/ALLG999/Nugget-Mobile/actions/workflows/build.yml)
 [![X](https://img.shields.io/twitter/follow/V_wo50)](https://x.com/V_wo50)
 <br>本项目基于AGPL-3.0许可证开源 请务必遵循相关规定[https://blog.csdn.net/weixin_43841461/article/details/142106462](https://blog.csdn.net/weixin_43841461/article/details/142106462)
 <br>汉化版本Nugget-Mobile下载地址：<a href="https://nightly.link/136478738/Nugget-Mobile/workflows/build/main/artifact.zip"><img src="https://nightly.link/logo.svg" alt style="width: 20px;" /></a> [nightly.link](https://nightly.link/136478738/Nugget-Mobile/workflows/build/main/artifact.zip)
